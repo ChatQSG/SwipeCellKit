@@ -45,7 +45,7 @@ public struct SwipeOptions {
     /// The amount of space, in points, between the button image and the button title.
     public var buttonSpacing: CGFloat?
 
-    /// The amount of space, in points,  left of actionView
+    /// The amount of space, in points, left of actionView
     public var paddingLeft: CGFloat?
 
     /// The amount of space, in points, right of actionView
