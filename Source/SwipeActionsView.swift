@@ -40,7 +40,7 @@ class SwipeActionsView: UIView {
     var safeAreaMargin: CGFloat {
         guard #available(iOS 11, *) else { return 0 }
         guard let scrollView = self.safeAreaInsetView else { return 0 }
-        return orientation == .left ? scrollView.safeAreaInsets.left : scrollView.safeAreaInsets.right
+        return orientation == .left ? scrollView.safeAreaInsets.left + (options.paddingLeft ?? 0) : scrollView.safeAreaInsets.right + (options.paddingRight ?? 0)
     }
 
     var visibleWidth: CGFloat = 0 {
